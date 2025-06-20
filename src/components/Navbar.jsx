@@ -9,6 +9,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop/Tablet Navbar */}
+      {/* navbar  */}
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-900/90 backdrop-blur-md border border-gray-700 rounded-full px-6 py-3 hidden sm:block">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
