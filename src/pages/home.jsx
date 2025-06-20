@@ -163,11 +163,12 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-green-600 hover:bg-green-700 cursor-pointer text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+               <a href="/rates"><button className="bg-green-600 hover:bg-green-700 cursor-pointer text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
                 <span>Get Free Estimate</span>
                 <ArrowRight size={20} />
               </button>
-              <button className="border border-gray-600 cursor-pointer hover:border-green-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2">
+              </a>
+              <button className="border border-gray-600  hover:border-green-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2">
                 <Phone size={20} />
                 <span>604-505-5865</span>
               </button>
@@ -223,10 +224,11 @@ export default function HomePage() {
       {/* Cost Estimation Section */}
       <section id="pricing" className="py-20 bg-gray-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Get Your Estimate</h2>
             <p className="text-xl text-gray-400">Select your service type and estimated weight for an instant quote</p>
           </div>
+     
 
           {/* Service Selection */}
           <div className="mb-12">

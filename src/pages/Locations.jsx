@@ -254,11 +254,12 @@ const cities = [
                       ))}
                     </div>
                   </div>
-
+ <a href="/book-now">
                   <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2">
                     <Phone size={16} />
                     <span>Book Service</span>
                   </button>
+                  </a>
                 </div>
               </div>
             ))}
@@ -315,10 +316,11 @@ const cities = [
                     ))}
                   </div>
                 </div>
-
+ <a href="/book-now">
                 <button className="w-full border border-green-600 hover:bg-green-600 text-green-400 hover:text-white py-2 rounded-lg font-semibold transition-colors text-sm">
                   Get Quote
                 </button>
+                </a>
               </div>
             ))}
           </div>

@@ -380,10 +380,12 @@ export default function Why404junk() {
               Join thousands of satisfied customers who've discovered fair, transparent junk removal pricing.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <a href="/rates">
               <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors flex items-center justify-center space-x-2">
                 <span>Get Free Estimate</span>
                 <ArrowRight size={20} />
               </button>
+              </a>
               <button className="border border-gray-600 hover:border-green-400 text-gray-300 hover:text-green-400 px-8 py-4 rounded-full font-semibold text-lg transition-colors flex items-center justify-center space-x-2">
                 <Phone size={20} />
                 <span>604-505-5865</span>
