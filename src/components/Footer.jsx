@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">© 2024 404-JUNK. All rights reserved. | Licensed & Insured</p>
+          <p className="text-gray-400">© 2025 404-JUNK. All rights reserved. | Licensed & Insured</p>
         </div>
       </div>
     </footer>

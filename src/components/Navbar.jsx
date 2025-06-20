@@ -2,36 +2,55 @@
 
 import React from "react"
 import { Phone, Menu, X } from "lucide-react"
+import Lottie from "lottie-react"
+import { Link  } from "react-router-dom"
+import binAnimation from "../assets/bin.json" // Adjust path as needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
+
 
   return (
     <>
       {/* Desktop/Tablet Navbar */}
       {/* navbar  */}
+           <div className="fixed md:text-5xl top-4 hidden xl:block left-32 transform -translate-x-1/2 z-50 items-center space-x-2">
+           <a href = "/"><div  className="text-3xl pr-5 cursor-pointer font-bold bg-gradient-to-r from-green-700 via-green-300 to-white bg-clip-text text-transparent">
+          404-JUNK
+        </div>
+        </a>
+      </div>
+      
+          
+            
+                <div className="w-24 fixed h-24 top-[-2px] hidden xl:block right-[-62px]  transform -translate-x-1/2 opacity-70 z-50">
+                  <Lottie animationData={binAnimation} loop={true} />
+                </div>
+  
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-900/90 backdrop-blur-md border border-gray-700 rounded-full px-6 py-3 hidden sm:block">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="text-green-400 font-bold text-xl pr-5">404-JUNK</div>
-          </div>
+        
 
           <div className="flex items-center space-x-6">
-            <a href="#services" className="text-gray-300 hover:text-green-400 transition-colors">
+            <a href="/" className="text-gray-300 hover:text-green-400 transition-colors">
               Services
             </a>
-            <a href="#pricing" className="text-gray-300 hover:text-green-400 transition-colors">
-              Pricing
+            <a href="/why-404-junk" className="text-gray-300 hover:text-green-400 transition-colors">
+              Why 404-Junk 
             </a>
-            <a href="#locations" className="text-gray-300 hover:text-green-400 transition-colors">
+            <a href="/rates" className="text-gray-300 hover:text-green-400 transition-colors">
+              Rates
+            </a>
+            <a href="/how-it-works" className="text-gray-300 hover:text-green-400 transition-colors">
+              How it works 
+            </a>
+            <a href="/locations" className="text-gray-300 hover:text-green-400 transition-colors">
               Locations
             </a>
-            <a href="#about" className="text-gray-300 hover:text-green-400 transition-colors">
-              About
-            </a>
+        
             <div className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-full transition-colors">
               <Phone size={16} />
-              <span className="text-white font-medium">604-505-5865</span>
+              <span className="text-white cursor-pointer font-medium">Book Now</span>
             </div>
           </div>
         </div>

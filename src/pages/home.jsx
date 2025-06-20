@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import Lottie from "lottie-react"
-import binAnimation from "../assets/bin.json" // Adjust path as needed
+
 import bg from "../assets/bg.jpg"
 import one from "../assets/1.avif"
 import two from "../assets/2.avif"
@@ -87,18 +86,19 @@ export default function HomePage() {
   ]
 
   const cities = [
+    "Surrey",
+    "New Westminster",
+    "Langly",
+    "White Rock",
     "Vancouver",
-    "Toronto",
-    "Calgary",
-    "Montreal",
-    "Ottawa",
-    "Edmonton",
-    "Winnipeg",
-    "Quebec City",
-    "Hamilton",
-    "Kitchener",
-    "London",
-    "Victoria",
+    "North Vancouver",
+    "West Vancouver",
+    "Richmond",
+    "Maple Ridge",
+    "Pit Meadows",
+    "Coquitlam",
+    "Burnaby",
+    "Tsawwassen",
   ]
 
   const newsItems = [
@@ -138,11 +138,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gray-950 text-white">
-      <Navbar />
-      
-          <div className="w-24 fixed h-24 top-[-2px] hidden xl:block right-[-62px]  transform -translate-x-1/2 opacity-70 z-50">
-            <Lottie animationData={binAnimation} loop={true} />
-          </div>
+   
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -470,7 +466,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Footer />
+
     </div>
   )
 }
