@@ -32,7 +32,7 @@ const Navbar = () => {
         
 
           <div className="flex items-center space-x-6">
-            <a href="/" className="text-gray-300 hover:text-green-400 transition-colors">
+            <a href="/services" className="text-gray-300 hover:text-green-400 transition-colors">
               Services
             </a>
             <a href="/why-404-junk" className="text-gray-300 hover:text-green-400 transition-colors">
@@ -79,7 +79,7 @@ const Navbar = () => {
         >
           {/* Menu Header */}
           <div className="flex items-center justify-between p-6 border-b border-gray-700">
-            <div className="text-green-400 font-bold text-xl">404-JUNK</div>
+            <a href="/"><div className="text-green-400 font-bold text-xl">404-JUNK</div></a>
             <button onClick={() => setIsOpen(false)} className="text-gray-300 p-1" aria-label="Close menu">
               <X size={24} />
             </button>
